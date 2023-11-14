@@ -1,6 +1,21 @@
 import { useEffect, useState } from "react";
 
+function Cart(){
+    const [cart ,setInCart] = useState([])
+    useEffect(() =>{
+        fetch('https://json-server-dusky-nine.vercel.app/cart-details')
+        .then((response) => response.json())
+        .then((data) => setInCart(data));
+    },[])
 
+    function handleDelete(id){
+        console.log(id)
+        fetch(`https://json-server-dusky-nine.vercel.app/cart-details/${id}`,{
+            method:"DELETE"
+        })
+        const updatedCart = cart.filter((item)=> item.id !== id)
+        setInCart(updatedCart)
+    }
     
     let total = 0
     let cartData = cart.map((item)=>{
