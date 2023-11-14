@@ -1,7 +1,30 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
+function Homepage() {
+    const navigate = useNavigate();
+    const [getPhones, setPhones] = useState([]);
+    useEffect(() => {
+        fetch("https://json-server-dusky-nine.vercel.app/phone_models")
+            .then((response) => response.json())
+            .then((data) => setPhones(data));
+    }, []);
 
+    const handleClick = (phoneId) => {
+        navigate(`/product/${phoneId}`);
+    };
+    const [search ,setSearch] = useState('')
+
+    function handleChange(e){
+        setSearch(e.target.value)
+    }
+    const filtered = getPhones.filter((i) =>{
+        if (search === ''){
+            return true
+        }else{
+            return i.name.includes(search)
+        }
+    })
 
     return (
         <div >
