@@ -19,8 +19,8 @@ function App() {
         <Route path="/registration" element = {<UserRegistration />}/>
         <Route path="/login" element = {<Login />}/>
         <Route path="/cart" element = {<Cart />}/>
-        <Route path="/checkout" element = {<Checkout />}/>
         
+
       </Routes>
     </>
   );

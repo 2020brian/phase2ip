@@ -20,7 +20,7 @@ This is a React component that displays a table of order details and provides fu
 1. Fork and clone the above repository
 2. Install the necessary dependencies
 3. Run npm run server to run our local db.json
-4. Run npm start to start our application
+4. Run npm start to start our 
 
 # Usage 2
 Open [TECH ZONE 01](https://tech-zone01-t535.vercel.app/)
