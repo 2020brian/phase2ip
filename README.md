@@ -23,7 +23,7 @@ This is a React component that displays a table of order details and provides fu
 4. Run npm start to start our 
 
 # Usage 2
-Open [TECH ZONE 01](https://phase2ip.vercel.app/1234)
+Open [TECH ZONE 01](https://phase2ip.vercel.app/)
 
 
 
