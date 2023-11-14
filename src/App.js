@@ -12,18 +12,6 @@ import Checkout from "./components/Checkout";
 function App() {
   return (
     <>
-      <NavBar />
-      <Routes>
-        <Route exact path="/" element={<Homepage />} />
-        <Route path="/product/:id" element={<ProductDetails />} />
-        <Route path="/registration" element = {<UserRegistration />}/>
-        <Route path="/login" element = {<Login />}/>
-        <Route path="/cart" element = {<Cart />}/>
-        
-
-      </Routes>
-    </>
-  );
-}
+      
 
 export default App;
